@@ -10,14 +10,15 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # Function to load the Random Forest model
-@st.cache_resource
 def load_model():
-    with open("E:\\FP\\AQI\\random_forest_regression_model.pkl", 'rb') as f:
+    # Construct the relative path
+    model_path = os.path.join(os.path.dirname(__file__), 'AQI', 'random_forest_regression_model.pkl')
+    print(f"Loading model from: {model_path}")
+
+    # Load the model from the relative path
+    with open(model_path, 'rb') as f:
         model = pickle.load(f)
     return model
-
-# Load the model once at the beginning
-model = load_model()
 
 # Load the model once at the beginning
 model = load_model()
@@ -72,7 +73,7 @@ def home():
         st.write("Meerut's Air Quality Index (AQI) has witnessed notable fluctuations over the past six years, reflecting the dynamic interplay of industrial activities, vehicular emissions, and seasonal variations. Despite occasional improvements spurred by regulatory measures and public awareness initiatives, AQI levels have predominantly lingered in the moderate to poor range, highlighting persistent challenges in maintaining air quality standards. To mitigate these levels, concerted efforts are imperative, including promoting sustainable practices, enforcing environmental regulations, and raising public awareness about the detrimental effects of air pollution. Additionally, during periods of heightened AQI, individuals should take precautions such as limiting outdoor exposure, using indoor air purifiers, and wearing protective masks to safeguard their health. By addressing these concerns collectively, we can strive towards a cleaner and healthier environment for Meerut.")
 
     with image_col:
-        st.image('D:\\FP\\40059.jpg', caption="Air Quality Index (AQI) for Meerut", width=421, use_column_width=True)
+        st.image('E:\\FP\\40059.jpg', caption="Air Quality Index (AQI) for Meerut", width=421, use_column_width=True)
 
     # Fetch real-time weather data
     st.title("Real-time Weather Data for Meerut")
@@ -120,25 +121,25 @@ def about_us():
             "name": "Ayush Sharma",
             "position": "Team Leader - Backend Developer",
             "contact": "+91 9084626104",
-            "image": "D:\\FP\\TeamImages\\mea.jpg"  # Provide the correct path to Ayush's image
+            "image": "E:\\FP\\TeamImages\\mea.jpg"  # Provide the correct path to Ayush's image
         },
         {
             "name": "Dhariya Rajput",
             "position": "Team Member - Content Writer",
             "contact": "+91 9760666142",
-            "image": "D:\\FP\\TeamImages\\dd.jpg"  # Provide the correct path to Dhariya's image
+            "image": "E:\\FP\\TeamImages\\dd.jpg"  # Provide the correct path to Dhariya's image
         },
         {
             "name": "Ankit .",
             "position": "Team Member - Content Writer",
             "contact": "+91 8126810022",
-            "image": "D:\\FP\\TeamImages\\ankitimg.jpg"  # Provide the correct path to Ankit's image
+            "image": "E:\\FP\\TeamImages\\ankitimg.jpg"  # Provide the correct path to Ankit's image
         },
         {
             "name": "Sandeep Kumar",
             "position": "Team Member - UI Developer",
             "contact": "+91 7906774535",
-            "image": "D:\\FP\\TeamImages\\sandeep2.jpg"  # Provide the correct path to Sandeep's image
+            "image": "E:\\FP\\TeamImages\\sandeep2.jpg"  # Provide the correct path to Sandeep's image
         }
     ]
 
