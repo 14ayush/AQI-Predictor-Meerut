@@ -1,10 +1,10 @@
 import os
 import pickle
 import streamlit as st
-import lib
+
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+
 import requests
 st.set_page_config(layout="wide", page_title="AQI Predictor")
 import warnings
