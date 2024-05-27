@@ -12,7 +12,7 @@ warnings.filterwarnings("ignore")
 # Function to load the Random Forest model
 @st.cache_resource
 def load_model():
-    with open('E:\\FP\\AQI\\random_forest_regression_model.pkl', 'rb') as f:
+    with open("E:\\FP\\AQI\\random_forest_regression_model.pkl", 'rb') as f:
         model = pickle.load(f)
     return model
 
