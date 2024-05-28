@@ -53,7 +53,7 @@ def home():
         st.write("Meerut's Air Quality Index (AQI) has witnessed notable fluctuations over the past six years, reflecting the dynamic interplay of industrial activities, vehicular emissions, and seasonal variations. Despite occasional improvements spurred by regulatory measures and public awareness initiatives, AQI levels have predominantly lingered in the moderate to poor range, highlighting persistent challenges in maintaining air quality standards. To mitigate these levels, concerted efforts are imperative, including promoting sustainable practices, enforcing environmental regulations, and raising public awareness about the detrimental effects of air pollution. Additionally, during periods of heightened AQI, individuals should take precautions such as limiting outdoor exposure, using indoor air purifiers, and wearing protective masks to safeguard their health. By addressing these concerns collectively, we can strive towards a cleaner and healthier environment for Meerut.")
         st.write("Understanding and monitoring the AQI in Meerut is essential for improving public health and ensuring a better quality of life. Continuous efforts from both governmental and non-governmental entities are required to address the underlying causes of air pollution and implement effective mitigation strategies. Residents should stay informed and take proactive steps to reduce exposure to polluted air, especially during high AQI periods.")
     with image_col:
-        st.image('E:\\FP\\40059.jpg', caption="Air Quality Index (AQI) for Meerut", width=421, use_column_width=True)
+        st.image('Images/40059.jpg', caption="Air Quality Index (AQI) for Meerut", width=421, use_column_width=True)
 
     st.title("Real-time Weather Data for Meerut")
     st.write("Fetching real-time weather data...")
@@ -78,10 +78,10 @@ def about_us():
     st.write("Looking ahead, our goal is to integrate unsupervised machine learning algorithms to further improve the accuracy and reliability of our predictions. We are committed to continuous learning and innovation, and we aspire to set a benchmark in environmental data science.")
     st.title("Meet Our Team")
     team_members = [
-        {"name": "Ayush Sharma", "position": "Team Leader - Backend Developer", "contact": "+91 9084626104", "image": "E:\\FP\\TeamImages\\mea.jpg"},
-        {"name": "Dhariya Rajput", "position": "Team Member - Content Writer", "contact": "+91 9760666142", "image": "E:\\FP\\TeamImages\\dd.jpg"},
-        {"name": "Ankit .", "position": "Team Member - Content Writer", "contact": "+91 8126810022", "image": "E:\\FP\\TeamImages\\ankitimg.jpg"},
-        {"name": "Sandeep Kumar", "position": "Team Member - UI Developer", "contact": "+91 7906774535", "image": "E:\\FP\\TeamImages\\sandeep2.jpg"}
+        {"name": "Ayush Sharma", "position": "Team Leader - Backend Developer", "contact": "+91 9084626104", "image": "Images/ayush.jpg"},
+        {"name": "Dhariya Rajput", "position": "Team Member - Content Writer", "contact": "+91 9760666142", "image": "Images/dd.jpg"},
+        {"name": "Ankit .", "position": "Team Member - Content Writer", "contact": "+91 8126810022", "image": "Images/ankitimg.jpg"},
+        {"name": "Sandeep Kumar", "position": "Team Member - UI Developer", "contact": "+91 7906774535", "image": "Images/sandeep2.jpg"}
     ]
     cols = st.columns(4)
     for idx, member in enumerate(team_members):
