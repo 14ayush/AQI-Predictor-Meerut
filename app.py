@@ -27,7 +27,7 @@ def predict_aqi(features):
 def fetch_weather_data():
     url = "https://the-weather-api.p.rapidapi.com/api/weather/meerut"
     headers = {
-        "x-rapidapi-key": "def365848cmsha161c60b3e592e8p1a6614jsn834558905835",
+        "x-rapidapi-key": "d2d60e9ffcmsh5ec0e4526286f11p159a20jsnd83847c26efc",
         "x-rapidapi-host": "the-weather-api.p.rapidapi.com"
     }
 
